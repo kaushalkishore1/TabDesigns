@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.k2infosoft.tabdesigns.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="top|center"
+        android:orientation="vertical"
+        android:weightSum="8">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Material Tab"
+                android:textAllCaps="true"
+                android:textColor="@color/darkred"
+                android:textSize="24sp"
+                android:typeface="serif" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="center">
+
+            <com.k2infosoft.k2floatingbutton.FloatingTextButton
+                android:id="@+id/action_navstriptab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="40dp"
+                android:layout_weight=".5"
+                app:floating_background_color="@color/darkred"
+                app:floating_icon="@drawable/ic_add"
+                app:floating_title="Custom Navigation Strip Tab"
+                app:floating_title_color="@android:color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="center">
+
+            <com.k2infosoft.k2floatingbutton.FloatingTextButton
+                android:id="@+id/action_spacetab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center"
+                android:layout_marginEnd="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="70dp"
+                android:layout_weight=".5"
+                app:floating_background_color="@color/darkred"
+                app:floating_icon="@drawable/ic_add"
+                app:floating_title="Custom Space Tab"
+                app:floating_title_color="@android:color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5">
+
+                    <com.k2infosoft.k2floatingbutton.FloatingTextButton
+                        android:id="@+id/tv_simpletab"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginStart="10dp"
+                        app:floating_background_color="@color/darkred"
+                        app:floating_icon="@drawable/ic_add"
+                        app:floating_title="Simple Tab"
+                        app:floating_title_color="@android:color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5">
+
+                    <com.k2infosoft.k2floatingbutton.FloatingTextButton
+                        android:id="@+id/tv_scroable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight=".5"
+                        app:floating_background_color="@color/darkred"
+                        app:floating_icon="@drawable/ic_add"
+                        app:floating_title="Scroable Tab"
+                        app:floating_title_color="@android:color/white" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5">
+
+                    <com.k2infosoft.k2floatingbutton.FloatingTextButton
+                        android:id="@+id/tv_nonscroable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight=".5"
+                        app:floating_background_color="@color/darkred"
+                        app:floating_icon="@drawable/ic_add"
+                        app:floating_title="Icon Tab"
+                        app:floating_title_color="@android:color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5">
+
+                    <com.k2infosoft.k2floatingbutton.FloatingTextButton
+                        android:id="@+id/action_icontab"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight=".5"
+                        app:floating_background_color="@color/darkred"
+                        app:floating_icon="@drawable/ic_add"
+                        app:floating_title="Icon Text Tab"
+                        app:floating_title_color="@android:color/white" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5">
+
+                    <com.k2infosoft.k2floatingbutton.FloatingTextButton
+                        android:id="@+id/action_icontexttab"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight=".5"
+                        app:floating_background_color="@color/darkred"
+                        app:floating_icon="@drawable/ic_add"
+                        app:floating_title="Custom Tab"
+                        app:floating_title_color="@android:color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5">
+
+                    <com.k2infosoft.k2floatingbutton.FloatingTextButton
+                        android:id="@+id/action_nonscroltab"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_gravity="center"
+                        android:layout_weight=".5"
+                        app:floating_background_color="@color/darkred"
+                        app:floating_icon="@drawable/ic_add"
+                        app:floating_title="Non Scrolable"
+                        app:floating_title_color="@android:color/white" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5">
+
+                    <com.k2infosoft.k2floatingbutton.FloatingTextButton
+                        android:id="@+id/action_nonbottomtab"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight=".5"
+                        app:floating_background_color="@color/darkred"
+                        app:floating_icon="@drawable/ic_add"
+                        app:floating_title="Bottom Tab"
+                        app:floating_title_color="@android:color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5">
+
+                    <com.k2infosoft.k2floatingbutton.FloatingTextButton
+                        android:id="@+id/action_collapsetab"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight=".5"
+                        app:floating_background_color="@color/darkred"
+                        app:floating_icon="@drawable/ic_add"
+                        app:floating_title="Collapse Tab"
+                        app:floating_title_color="@android:color/white" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <com.k2infosoft.k2floatingbutton.FloatingTextButton
+                    android:id="@+id/action_navtab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight=".5"
+                    app:floating_background_color="@color/darkred"
+                    app:floating_icon="@drawable/ic_add"
+                    app:floating_title="Collapse Tab"
+                    app:floating_title_color="@android:color/white" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

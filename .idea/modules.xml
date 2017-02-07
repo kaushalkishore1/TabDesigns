@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/TabDesigns.iml" filepath="$PROJECT_DIR$/TabDesigns.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/k2bottomnavigation/k2bottomnavigation.iml" filepath="$PROJECT_DIR$/k2bottomnavigation/k2bottomnavigation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/k2floatingbutton/k2floatingbutton.iml" filepath="$PROJECT_DIR$/k2floatingbutton/k2floatingbutton.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spacelib/spacelib.iml" filepath="$PROJECT_DIR$/spacelib/spacelib.iml" />
+    </modules>
+  </component>
+</project>
