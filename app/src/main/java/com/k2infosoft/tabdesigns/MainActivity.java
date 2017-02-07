@@ -14,6 +14,7 @@ import android.view.MenuItem;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+
 /*
 * @author:kaushal kishore
 * Created on:07:02:2017
@@ -41,25 +42,27 @@ public class MainActivity extends AppCompatActivity {
     com.k2infosoft.k2floatingbutton.FloatingTextButton mnavstriptab;
     @BindView(R.id.action_spacetab)
     com.k2infosoft.k2floatingbutton.FloatingTextButton mspacetab;
+    @BindView(R.id.fab)
+    FloatingActionButton fab;
+    @BindView(R.id.toolbar)
+    Toolbar toolbar;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
         ButterKnife.bind(this);
+        setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+
             }
         });
     }
+
 
     @OnClick(R.id.tv_simpletab)
     public void setMsimpletab(View view) {

@@ -1,5 +1,6 @@
 package com.k2infosoft.tabdesigns;
 
+import android.support.design.widget.TabLayout;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
@@ -11,6 +12,9 @@ import com.gigamole.navigationtabstrip.NavigationTabStrip;
 import com.k2infosoft.tabdesigns.fragments.OneFragment;
 import com.k2infosoft.tabdesigns.fragments.ThreeFragment;
 import com.k2infosoft.tabdesigns.fragments.TwoFragment;
+
+import butterknife.BindView;
+
 /*
 * @author:kaushal kishore
 * Created on:07:02:2017
@@ -19,6 +23,7 @@ public class CustomStripTab extends AppCompatActivity {
     private ViewPager mViewPager;
     private NavigationTabStrip mCenterNavigationTabStrip;
     public static ViewPager viewPager;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
