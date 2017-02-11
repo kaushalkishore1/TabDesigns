@@ -17,7 +17,7 @@
         android:background="@color/colorPrimaryDark"
         android:gravity="top|center"
         android:orientation="vertical"
-        android:weightSum="8">
+        android:weightSum="9">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -339,6 +339,30 @@
                     app:floating_title_color="@android:color/white" />
             </LinearLayout>
 
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark">
+
+            <com.k2infosoft.k2floatingbutton.FloatingTextButton
+                android:id="@+id/action_coordinatortab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center"
+                android:layout_marginEnd="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="55dp"
+                android:layout_weight=".5"
+                app:floating_background_color="@color/darkred"
+                app:floating_icon="@drawable/ic_add"
+                app:floating_title="Coordinator Tab"
+                app:floating_title_color="@android:color/white" />
 
         </LinearLayout>
 

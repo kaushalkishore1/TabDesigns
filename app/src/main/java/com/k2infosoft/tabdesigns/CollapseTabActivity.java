@@ -34,6 +34,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.k2infosoft.tabdesigns.coordinatortab.IntentUtils;
 import com.k2infosoft.tabdesigns.fragments.OneFragment;
 import com.k2infosoft.tabdesigns.fragments.ThreeFragment;
 import com.k2infosoft.tabdesigns.fragments.TwoFragment;
@@ -106,12 +107,19 @@ public class CollapseTabActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
+            case R.id.action_about:
+                IntentUtils.openUrl(this, "https://github.com/kaushalkishore1/TabDesigns");
+                break;
+            case R.id.action_about_me:
+                IntentUtils.openUrl(this, "https://in.linkedin.com/in/kaushal-kishore-96910758");
+                break;
             case android.R.id.home:
                 mDrawerLayout.openDrawer(GravityCompat.START);
                 return true;
         }
         return super.onOptionsItemSelected(item);
     }
+
 
     private void setupViewPager(ViewPager viewPager) {
         Adapter adapter = new Adapter(getSupportFragmentManager());

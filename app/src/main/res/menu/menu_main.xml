@@ -7,4 +7,13 @@
         android:orderInCategory="100"
         android:title="@string/action_settings"
         app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_about"
+        android:title="About the control" />
+    app:showAsAction="never" />
+    <item
+        android:id="@+id/action_about_me"
+        android:title="About developers" />
+    app:showAsAction="never" />
 </menu>
